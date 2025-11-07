@@ -8,7 +8,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 import structlog
 
 from app.api.deps import (
-    get_db, get_redis_client, get_rate_limiter,
+    get_db, get_current_user, get_rate_limiter,
     get_client_ip, get_user_agent
 )
 from app.core.config import settings
